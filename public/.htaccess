@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /restaurant-ryoha/
+    
+    # Si le fichier ou dossier existe, on l'utilise directement
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    
+    # Sinon on redirige vers index.php
+    RewriteRule ^(.*)$ index.php [QSA,L]
+</IfModule>
