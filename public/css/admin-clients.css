@@ -1,0 +1,54 @@
+/* Styles pour la gestion des clients */
+.client-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.client-stats .stat-item {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.client-stats .stat-item .number {
+    font-size: 24px;
+    font-weight: bold;
+}
+.client-stats .stat-item .label {
+    color: #666;
+}
+.client-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    align-items: flex-end;
+}
+.client-filters label {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+.client-filters input, .client-filters select {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+.client-filters .btn {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.client-filters .btn-primary { background: #e8a87c; color: #1a1a1a; }
+.client-filters .btn-secondary { background: #6c757d; color: white; text-decoration: none; padding: 8px 20px; border-radius: 6px; }
+.client-table .badge { padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; }
+.client-table .badge-confirmee { background: #d4edda; color: #155724; }
+.client-table .badge-annulee { background: #f8d7da; color: #721c24; }
+.client-table .badge-terminee { background: #cce5ff; color: #004085; }

@@ -12,21 +12,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     
     <!-- CSS personnalisé -->
-    <link rel="stylesheet" href="/restaurant-ryoha/assets/css/app.css">
+    <link rel="stylesheet" href="/restaurant/assets/css/app.css">
 </head>
 <body>
     <!-- HEADER -->
     <header class="header">
         <div class="container">
-            <a href="/restaurant-ryoha/" class="logo">
+            <a href="<?php echo BASE_URL; ?>/" class="logo">
                 RYOHA <span>Restaurant</span>
             </a>
             <nav class="nav">
                 <ul>
-                    <li><a href="/restaurant-ryoha/" class="<?php echo $active_page === 'home' ? 'active' : ''; ?>">Accueil</a></li>
-                    <li><a href="/restaurant-ryoha/menu" class="<?php echo $active_page === 'menu' ? 'active' : ''; ?>">Menu</a></li>
-                    <li><a href="/restaurant-ryoha/reservation" class="<?php echo $active_page === 'reservation' ? 'active' : ''; ?>">Réserver</a></li>
-                    <li><a href="/restaurant-ryoha/contact" class="<?php echo $active_page === 'contact' ? 'active' : ''; ?>">Contact</a></li>
+                    <li><a href="/restaurant/" class="<?php echo $active_page === 'home' ? 'active' : ''; ?>">Accueil</a></li>
+                    <li><a href="/restaurant/menu" class="<?php echo $active_page === 'menu' ? 'active' : ''; ?>">Menu</a></li>
+                    <li><a href="/restaurant/reservation" class="<?php echo $active_page === 'reservation' ? 'active' : ''; ?>">Réserver</a></li>
+                    <li><a href="/restaurant/contact" class="<?php echo $active_page === 'contact' ? 'active' : ''; ?>">Contact</a></li>
                 </ul>
             </nav>
             <button class="mobile-toggle" id="mobileToggle">
@@ -91,6 +91,6 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- JavaScript personnalisé -->
-    <script src="/restaurant-ryoha/assets/js/app.js"></script>
+    <script src="/restaurant/assets/js/app.js"></script>
 </body>
 </html>
